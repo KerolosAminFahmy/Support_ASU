@@ -149,6 +149,8 @@ footer .cardFooter{
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 85%;
+  width: 90%;
 }
 footer .cardFooter p{
   width: 80%;
@@ -173,4 +175,44 @@ form textarea{
   border: 1px solid #FFF !important;
   background: #303030 !important;
   margin-bottom: 8px;
+}
+form .buttonSubmit {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+form .buttonSubmit button{
+  margin-top: 10px;
+  border-radius: 5px;
+  background: #F5B819;
+  padding: 7px 35px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  color: #000;
+  text-transform: uppercase;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px
+}
+.containerLinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85%;
+}
+.links{
+  display: flex;
+  justify-content: flex-start;
+}
+.links i{
+  font-size: 35px;
+  border:15px;
+  margin-right: 10px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.links i:hover{
+  transform: scale(1.1);
 }
