@@ -1,0 +1,290 @@
+/*Start Section here we support*/
+#FirstSection{
+  min-height: 460px;
+}
+#FirstSection .row{
+  margin-top: 0 !important;
+}
+section{
+  position: relative;
+  width: 100%;
+}
+section .OwnContainer{
+  padding-top: 70px;
+}
+section .backgroundImage{
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+section .backgroundImage img{
+  width: inherit;
+  height: 800px;
+}
+section .containerContent{
+  margin-top: 10px;
+
+}
+section .containerContent h2{
+  color: #F4B719;
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+section .containerContent p{
+  color: #FFF;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0;
+}
+section .containerContent span{
+  color: #F4B719;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+section .containerContent button{
+  margin-top: 15px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #F4B819 0%, rgba(244, 184, 25, 0.50) 100%);
+  padding:7px 25px;
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+section .imageLogoRight{
+  width: 99%;
+  max-width: 390px;
+  height: 100%;
+  min-height: 250px;
+}
+section .imageLogoRight img{
+  width: inherit;
+  height: inherit;
+}
+/*second Section */
+section .headSection{
+  margin-top: 120px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+section .headSection img{
+  position: absolute;
+  width: 30%;
+  min-width: 350px;
+  min-height: 80px;
+  z-index: -1;
+}
+section .headSection h2{
+  padding-left: 30px;
+  color: #F4B719;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  z-index: 3;
+  vertical-align: middle;
+}
+section .bodySection{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+section .bodySection .row .col-lg-6{
+  padding: 0;
+}
+section .bodySection p{
+  max-width: 360px;
+  color: #000;
+  font-family: 'Source Serif Pro';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+} 
+section .bodySection p span{
+  color: #F5B819;
+  font-family: 'Source Serif Pro';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+section .bodySection p span:nth-child(1){
+  color: #F5B819;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+section .bodySection .ImageSupportHigh{
+  width: 100%;
+  height: 100%;
+}
+section .bodySection .ImageSupportHigh img{
+  width: inherit;
+  height: inherit;
+}
+
+section .bodySection .row{
+  justify-content: center;
+}
+/*Start what we have Section */
+#thirdSection{
+  margin-top: 100px;
+}
+section .backgroundImageHave{
+  position: absolute;
+  width: 100%;
+  height: 115%;
+  z-index: -1;
+}
+section .backgroundImageHave img{
+  width: inherit;
+  max-height: inherit;
+}
+section .headSectionHave h2{
+  color: #F5B819;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+}
+section  .row{
+  margin-top: 40px;
+}
+section  .row .cardHave{
+  height: 100%;
+}
+section  .row .cardHave{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section  .row .cardHave img {
+  width: 100%;
+  max-width: 350px;
+  height: 90% ;
+  max-height: 350px;
+  border-radius: 25px;
+}
+section .row .cardHave button{
+  border-radius: 5px;
+  background: linear-gradient(180deg, #F4B819 0%, rgba(244, 184, 25, 0.50) 100%);
+  padding: 10px 20px;
+  width: 60%;
+  margin-top: 40px;
+  border: 0;
+  position: relative;
+}
+section .row .cardHave .mark::after
+{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  right:10px;
+  top:-8px;
+}
+/*start high board section*/
+#fourthSection{
+  margin-top: 200px;
+}
+#fourthSection .headerHightBoard{
+  width: 93%;
+}
+#fourthSection .row{
+  justify-content: center;
+  align-items: center;
+}
+
+#fourthSection .headerHightBoard h2{
+  color: #F5B819;
+  text-align: center;
+font-family: Inter;
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: 40px;
+}
+.cardHighBoard{
+  width: 100%;
+  max-width: 350px;
+  height: 460px;
+  background-color: #000;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cardHighBoard img{
+  width: 80%;
+  height: 90%;
+  min-height: 330px;
+  max-height: 90%;
+  border-radius: 25px;
+}
+.cardHighBoard::after{
+  content: attr(data-role);
+  position: absolute;
+  top:10px;
+  width: 70%;
+  height: fit-content;
+  background: rgba(217, 217, 217, 0.71);
+  border-radius: 10px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size:19px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+}
+.HighboardName{
+  background-color: #F4B719;
+  color: #FFF;
+  position: absolute;
+  bottom:10px;
+  width: 70%;
+  height: fit-content;
+  text-align: center;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+  border-radius: 10px;
+}
+.tra{
+  height: 0;
+  width: 0;
+  border-bottom:20px solid #F4B719;
+  border-right:20px solid transparent;
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  transform: rotateX(207deg);
+}
