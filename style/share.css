@@ -32,7 +32,12 @@ body{
 }
 /*Header Style*/
 header{
+  /* position: sticky; */
+  top: 0;
+  z-index: 100;
+  transition: all .4s ease-in-out;
   background: #262626;
+  background-color: #000;
   padding: 5px 0;
 }
 a{
@@ -91,8 +96,8 @@ header .OwnContainer .row .links a{
   line-height: normal;
 }
 header .OwnContainer .row .links .ActivePage{
-  color:white;
-  border-bottom: 3px solid white;
+  color:#F5B819;
+  border-bottom: 3px solid #F5B819;
   padding-bottom:5px;
 }
 .login{
@@ -120,6 +125,7 @@ footer{
   margin-top: 80px;
   padding: 50px 30px;
   color: white;
+  padding-bottom: 0;
 }
 footer .headerContact{
   position: relative;
@@ -215,4 +221,50 @@ form .buttonSubmit button{
 }
 .links i:hover{
   transform: scale(1.1);
+}
+
+
+
+/* -------------------------- */
+::-webkit-scrollbar {
+  width:7px;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* border-radius: 10px; */
+  background-color: #F5B819;
+}
+
+
+::-moz-scrollbar {
+  width:7px;
+  background-color: #F5B819;
+}
+
+::-moz-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-moz-scrollbar-thumb {
+  /* border-radius: 10px; */
+  background-color: #F5B819;
+}
+
+::-ms-scrollbar {
+  width:7px;
+  background-color: white;
+}
+
+::-ms-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-ms-scrollbar-thumb {
+  /* border-radius: 10px; */
+  background-color: #F5B819;
 }
