@@ -5,6 +5,9 @@
 #FirstSection .row{
   margin-top: 0 !important;
 }
+#FirstSection .row .col-lg-7{
+  padding-top: 35px;
+}
 section{
   position: relative;
   width: 100%;
@@ -246,6 +249,8 @@ line-height: 40px;
   min-height: 330px;
   max-height: 90%;
   border-radius: 25px;
+  object-fit: cover;
+  object-position: center center;
 }
 .cardHighBoard::after{
   content: attr(data-role);
