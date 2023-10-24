@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Import Bootstrap file-->
+<link rel="icon" type="image/x-icon" href="../image/supportAnton.ico">
+<link rel="stylesheet" href="../assest/icons/fontawesome-free-6.4.2-web/css/all.min.css">
+
+<link rel="stylesheet" href="../assest/bootstrap/css/bootstrap.min.css">
+<title>Document</title>
+</head>
+<body>
+
+
+    
+    <style>
+
+        .GalleryCard{
+            min-height: 150px;
+            background-color: gray;
+            margin: 5px;
+            border-radius: 3px;
+            position: relative;
+            overflow: hidden;
+            z-index: 9;
+        }
+        .GalleryCard:nth-child(3){
+            margin-right: 15px;
+            padding: 0;
+        }
+        .GalleryCard:nth-child(4){
+            margin-right: 15px;
+            padding: 0;
+        }
+        .shadow{
+            z-index: 10;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #57575796;
+        }
+        .history{
+            z-index: 11;
+            padding: 4px 20px;
+            font-size: 12px;
+            font-weight: 500;
+            border-radius:5px;
+            position: absolute;
+            top: 5px;
+            right:5px ;
+            background-color: #575757;
+            color: white;
+        }
+        .Description{
+            position: absolute;
+            padding: 10px;
+            bottom: 0;
+            z-index: 11;
+            color: white;
+            padding-right: 2px;
+            
+        }
+        .Description span{
+            display: inline-block;
+            font-size: 14px;
+            width: 80%;
+            overflow: hidden;
+            /* white-space: nowrap; */
+            text-overflow: ellipsis;
+
+        }
+        .Description span span{
+            display: inline;
+            color: #F4B719;
+            cursor: pointer;
+        }
+        
+        @media (max-width:990px) {
+            .GalleryCard:nth-child(3){
+            margin-right: 5px;
+            padding: 0;
+        }
+        .GalleryCard:nth-child(4){
+            margin-right: 5px;
+            
+            padding: 0;
+        }
+        .GalleryCard:last-child{
+            margin: 5px !important;
+        }
+
+        }
+
+    </style>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 col-md-4 GalleryCard"></div>
+            <div class="col-lg-4 col-md-7 GalleryCard"></div>
+            <div class="col-lg-3 col-md-6 GalleryCard"></div>
+            <div class="col-lg-3 col-md-5 GalleryCard">
+                <div class="history">
+                    10/10/2023
+                </div>
+                <div class="shadow">
+                </div>
+                <div class="ImageCardContainer" style="width: 100%;">
+                    <img src="../image/Welcome.png" width="100%" alt="">
+                </div>
+
+                <div class="Description">
+                    <h2>Welcome Day</h2>
+                    <span>WELCOME DAY  : The first impression is crucial, and Welcome Day ensures... <span class="ReadMoreBtn">read more</span></span>
+                </div>
+            </div>
+            <div class="col-lg-8  col-md-11 GalleryCard "></div>
+        </div>
+    </div>
+
+
+    <script src="../assest/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/CommitteeRoute.js"></script>
+    </body>
+    </html>

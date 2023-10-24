@@ -1,0 +1,203 @@
+/*Upcoming section*/
+.EventSection {
+  margin-top: 5rem;
+}
+.EventSection .OwnContainer:nth-child(2){
+  width: 93%;
+}
+.EventSection .headerContent{
+  padding-left: 30px;
+  position: relative;
+}
+.EventSection .headerContent::after{
+  content: '';
+  width: 10px;
+  height: 170%;
+  left: 10px;
+  top: -10px;
+  background-color: #F4B719;
+  position: absolute;
+  border-radius: 3px;
+}
+.EventSection .headerContent h2{
+  color: #333;  
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 2rem;
+}
+
+.GalleryCard{
+  min-height: 150px;
+  max-height: 300px;
+  background-color: gray;
+  margin: 5px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
+}
+.GalleryCard:nth-child(3){
+  margin-right: 6px;
+  padding: 0;
+}
+.GalleryCard:nth-child(4){
+  margin-right: 15px;
+  padding: 0;
+}
+.shadow{
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #57575796;
+}
+.history{
+  z-index: 11;
+  padding: 4px 20px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius:5px;
+  position: absolute;
+  top: 5px;
+  right:5px ;
+  background-color: #575757;
+  color: white;
+}
+.Description{
+  position: absolute;
+  padding: 10px;
+  bottom: 0;
+  z-index: 11;
+  color: white;
+  padding-right: 2px;
+  
+}
+.col-lg-3 .Description p{
+  width: 75%;
+}
+.col-lg-8 .Description p{
+  width: 90%;
+}
+.Description p{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+
+}
+.Description span{
+  display: inline;
+  color: #F4B719;
+  cursor: pointer;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+@media (max-width:990px) {
+  .GalleryCard:nth-child(3){
+  margin-right: 5px;
+  padding: 0;
+}
+.GalleryCard:nth-child(4){
+  margin-right: 5px;
+  
+  padding: 0;
+}
+.GalleryCard:last-child{
+  margin: 5px !important;
+}
+
+}
+.ImageCardContainer{
+  height: 100%;
+  width: 100%;
+}
+.ImageCardContainer img{
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+  object-position: center center;
+}
+.contain{
+  display: flex;
+  align-items: flex-end;
+} 
+#ShowMoreEvent{
+  margin-left: auto;
+  margin-right: auto;
+  width: 96%;
+
+}
+#ShowMoreEvent .col-lg-12{
+  background-color: black;
+  border-radius: 5px;
+  padding: 30px;
+}
+#ShowMoreEvent .containerEvent{
+  display: flex;
+}
+#ShowMoreEvent .containerEvent .ImageMainEvent{
+  width:calc(190%/2);;
+}
+#ShowMoreEvent .containerEvent .ImageMainEvent img{
+  width: inherit;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+#ShowMoreEvent .containerEvent .MoreInformation{
+  width: calc(190%/2);
+}
+#ShowMoreEvent .containerEvent .MoreInformation .titleAndHistory{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+#ShowMoreEvent .containerEvent .MoreInformation .titleAndHistory h2{
+  color: #F5B819;
+  font-family: Inter;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+#ShowMoreEvent .containerEvent .MoreInformation .titleAndHistory p{
+  padding: 4px 10px;
+  border-radius: 7px;
+  color: #000;
+  background-color: #F5B819;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px
+}
+#ShowMoreEvent .containerEvent .MoreInformation .detailEvent p{
+  color: #FFF;
+
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+#ShowMoreEvent .containerEvent .MoreInformation .buttonevent{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+#ShowMoreEvent .containerEvent .MoreInformation .buttonevent button{
+  width: fit-content;
+  background-color: #F4B719;
+  padding: 5px 25px;
+}
