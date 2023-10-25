@@ -95,6 +95,7 @@
   color: #F4B719;
   cursor: pointer;
   white-space: nowrap;
+  user-select: none;
   text-transform: capitalize;
 }
 
