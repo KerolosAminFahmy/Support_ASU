@@ -321,7 +321,8 @@ margin-bottom: 10rem;
     padding-top: 0;
   }
   section .backgroundImage {
-    top:270px;
+    /* top:270px; */
+    top: 320px;
   }
   section .containerContent {
     margin-top: 0px;
@@ -366,5 +367,10 @@ margin-bottom: 10rem;
   }
   section  .row .col-lg-4:nth-child(2) img{
     object-fit: cover;
+  }
+}
+@media (max-width:460px){
+  section .backgroundImage {
+    top:240px;
   }
 }
