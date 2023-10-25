@@ -229,7 +229,7 @@ form .buttonSubmit button{
 /* -------------------------- */
 ::-webkit-scrollbar {
   width:7px;
-  background-color: #ffffff;
+  background-color: black;
 }
 
 ::-webkit-scrollbar-track {

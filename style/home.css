@@ -306,7 +306,9 @@ margin-bottom: 10rem;
   section .OwnContainer {
     padding-top: 50px;
   }
-
+  #fourthSection {
+    margin-top: 250px;
+}
   #FirstSection {
     background-color: #000;
     padding-bottom: 7rem;
