@@ -66,6 +66,7 @@ header .OwnContainer .row .containerLogo .textLogo h2{
   font-weight: 900;
   text-transform: uppercase;
   user-select: none;
+  margin:0;
 }
 header .OwnContainer .row .containerLogo .textLogo h2 span{
   display: inline-block;
@@ -267,4 +268,53 @@ form .buttonSubmit button{
 ::-ms-scrollbar-thumb {
   /* border-radius: 10px; */
   background-color: #F5B819;
+}
+
+@media (max-width:990px) {
+  footer .OwnContainer .row .col-lg-3,footer .OwnContainer .row .col-lg-4{
+    margin-bottom: 3rem;
+  }
+  footer .OwnContainer .row .col-lg-3:nth-child(1){
+    height: 200px;
+  }
+  footer .cardFooter {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom:30px ;
+  }
+  header .OwnContainer{
+    width: 92%;
+  }
+}
+@media(max-width:990px){
+  header .row{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .row .col-lg-4,header .row .col-lg-7{
+    margin-bottom: 1rem;
+  }
+  .links{
+    justify-content: center;
+  }
+  header .OwnContainer .row .links a,header .OwnContainer .row .containerLogo .textLogo h2  {
+    white-space: nowrap;
+  }
+  header .OwnContainer .row .containerLogo {
+    width: 100%;
+  }
+}
+@media (max-width:530px) {
+  header .OwnContainer .row .links ul li {
+    margin-right: 0;
+    padding: 5px 10px;
+  }
+}
+@media (max-width:470px) {
+  footer{
+    padding-left: 0;
+    padding-right: 0;
+
+  }
 }

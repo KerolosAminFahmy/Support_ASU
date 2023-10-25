@@ -141,12 +141,17 @@ section .bodySection p span:nth-child(1){
 section .bodySection .ImageSupportHigh{
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 section .bodySection .ImageSupportHigh img{
   width: inherit;
   height: inherit;
+  object-fit: cover;
+  transition: all 0.3s linear;
 }
-
+section .bodySection .ImageSupportHigh img:hover{
+  transform: scale(1.2) rotatez(-10deg);
+}
 section .bodySection .row{
   justify-content: center;
 }
@@ -176,13 +181,13 @@ section .headSectionHave h2{
 section  .row{
   margin-top: 40px;
 }
-section  .row .cardHave{
-  height: 100%;
-}
+
 section  .row .cardHave{
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 500px;
+  height: 100%;
 }
 section  .row .cardHave img {
   width: 100%;
@@ -293,4 +298,73 @@ margin-bottom: 10rem;
   bottom: -10px;
   left: 0px;
   transform: rotateX(207deg);
+}
+/*Responsive Design*/
+
+
+@media (max-width:991px){
+  section .OwnContainer {
+    padding-top: 50px;
+  }
+
+  #FirstSection {
+    background-color: #000;
+    padding-bottom: 7rem;
+  }
+  #FirstSection .row .col-lg-5{
+    order: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #FirstSection .row .col-lg-7 {
+    padding-top: 0;
+  }
+  section .backgroundImage {
+    top:270px;
+  }
+  section .containerContent {
+    margin-top: 0px;
+    text-align: center;
+  }
+  section .imageLogoRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section  .row .cardHave{
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  section  .row .col-lg-4{
+    margin-bottom: 4rem;
+  }
+  section .backgroundImageHave img {
+    object-fit: cover;
+    object-position: -79rem;
+  }
+}
+@media(max-width:760px){
+  section .bodySection p{
+    max-width: 100%;
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width:480px){
+  section .containerContent h2{
+    font-size: 39px;
+  }
+  section .containerContent p{
+    font-size: 19px;
+  }
+}
+@media (max-width:990px) and (min-width:400px) {
+  
+  #thirdSection  .row .col-lg-4{
+    height: calc(1290px/3);
+  }
+  section  .row .col-lg-4:nth-child(2) img{
+    object-fit: cover;
+  }
 }
