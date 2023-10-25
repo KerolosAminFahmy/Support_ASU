@@ -353,7 +353,7 @@ margin-bottom: 10rem;
 }
 @media (max-width:480px){
   section .containerContent h2{
-    font-size: 39px;
+    font-size: 35px;
   }
   section .containerContent p{
     font-size: 19px;
