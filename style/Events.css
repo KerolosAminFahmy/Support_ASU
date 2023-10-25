@@ -201,3 +201,36 @@
   background-color: #F4B719;
   padding: 5px 25px;
 }
+@media(max-width:990px){
+  
+  #ShowMoreEvent .containerEvent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ImageMainEvent{
+    margin-bottom: 2rem;
+  }
+}
+@media(max-width:767px){
+  .EventSection .headerContent::after{
+    left: -20px;
+  }
+  .EventSection .headerContent {
+    padding-left: 0;
+  }
+  #ShowMoreEvent .OwnContainer{
+    width: 97%;
+  }
+}
+@media(max-width:480px){
+  #ShowMoreEvent .containerEvent .MoreInformation .titleAndHistory h2{
+    font-size: 19px;
+  }
+  #ShowMoreEvent .containerEvent .MoreInformation .titleAndHistory p {
+    font-size: 16px;
+  }
+  #ShowMoreEvent .containerEvent .MoreInformation .detailEvent p {
+    font-size: 14px;
+  }
+}
