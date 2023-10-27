@@ -88,6 +88,10 @@
     .NonTechContainer h2{
         font-size: 18px;
     }
+
+    .SpceColo{
+        display: none !important;
+    }
 }
 .NonTechContainer h2{
     white-space: nowrap;
