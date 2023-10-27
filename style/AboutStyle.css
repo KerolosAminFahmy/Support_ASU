@@ -149,6 +149,11 @@
 
 
 /*work on website*/
+#WorkOnWbsite {
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
 #WorkOnWbsite .backgroundWork{
   width: 100%;
     max-width: 830px;
@@ -187,6 +192,9 @@
 /*teams member*/
 #OurTeam{
   margin-top: 10rem;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
 }
 #OurTeam .row{
   margin-bottom: 8rem;
@@ -274,9 +282,9 @@
     width:94% !important;
   }
   .lampImage{
-    width: 100px !important;
-    bottom: -80px !important;
-    right: -50px !important;
+    width: 60px !important;
+    bottom: -47px !important;
+    right: -7% !important
   }
 }
 @media (max-width:530px){
