@@ -6,8 +6,6 @@ const DetailCurrentEvent=document.getElementById("DetailCurrentEvent")
 const ImageCurrentEvent=document.getElementById("ImageCurrentEvent")
 
 window.onload=()=>{
-
-  console.log(AllReadMore)
   AllReadMore.forEach((ele)=>{
     ele.addEventListener("click", () => {
       const p = ele.parentNode.parentNode.querySelector("p").innerHTML;
@@ -23,7 +21,6 @@ window.onload=()=>{
         behavior: "smooth", 
         block: "start", 
         inline: "nearest" 
-        
       });
     })
   
