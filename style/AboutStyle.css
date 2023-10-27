@@ -292,3 +292,8 @@
     border-width: 5px !important;
   }
 }
+@media (max-width:420px){
+  .tra{
+    left: 5%;
+  }
+}
