@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Import Bootstrap file-->
   <link rel="icon" type="image/x-icon" href="image/supportAnton.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.8.0/dist/sweetalert2.min.css">
   <link rel="stylesheet" href="assest/icons/fontawesome-free-6.4.2-web/css/all.min.css">
-
   <link rel="stylesheet" href="assest/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="style/share.css">
   <link rel="stylesheet" href="style/home.css">
-  <title>Document</title>
+  <title>Home - Support ASU</title>
 </head>
 <body>
   <!--Start Header Section-->
@@ -54,66 +54,8 @@
     </div>
   </header>
     <!--End Header Section-->
-    <style>
-      .testbk{
-        width: 100%;
-        top:9rem;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0.2;
-        left:-50px ;
-        overflow: hidden;
-      }
-      .testbk img{
-        width: 100%;
-        max-width:1200px;
-        min-width: 920px;
-        height: 70%;
-        max-height:1200px;
-        min-height: 920px;
-      }
-      @media (max-width:1300px) {
-        .testbk{
-          left: 0 !important;
-          top:9rem;
-        }
-        #fourthSection .headerHightBoard{
-          width: 100%;
-        }
-      }
-      @media (max-width:990px) {
-        .testbk{
-          left: 0px !important;
-          top:9rem;
-        }
-        .backgroundImageHave{
-          height: 109% !important;
-        }
-        #fourthSection .row{
-          flex-direction: column;
-        }
-        #fourthSection .row .col-lg-4{
-          margin-bottom: 20px;
-          
-        }
-        #fourthSection .row .col-lg-4 .cardHighBoard{
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-      @media (max-width:850px) {
-        .testbk{
-          left: 0px !important;
-          top:8rem;
-        }
-      }
-  </style>
+    <!-- Start First Section -->
     <section id="FirstSection">
-      <!-- <div class="testbk">
-        <img src="image/egyptian-anubis.png" alt="" srcset="">
-      </div> -->
       <div class="row" style="width:90%">
         <div class="col-lg-4">
           <div class="backgroundImage">
@@ -121,7 +63,6 @@
           </div>
         </div>
       </div>
-
       <div class="OwnContainer">
         <div class="row">
           <div class="col-lg-7">
@@ -131,7 +72,6 @@
               <p>Just Press <span>F1</span></p>
               <button>Get Started</button>
             </div>
-
           </div>
           <div class="col-lg-5">
             <div class="imageLogoRight">
@@ -141,6 +81,8 @@
         </div>
       </div>
     </section> 
+    <!-- End First Section -->
+    <!--Start Second Section-->
     <section>
       <div class="headSection">
         <img src="image/bk support text..png" alt="">
@@ -169,6 +111,8 @@
         </div>
       </div>
     </section>
+    <!--End Second Section-->
+    <!--Start Third Section-->
     <section id="thirdSection">
       <div class="backgroundImageHave">
         <img src="image/bk support have.png" alt="bk support have" style="width: inherit;height: inherit;"> 
@@ -199,6 +143,8 @@
         </div>
       </div>
     </section>
+    <!--End Third Section-->
+    <!--Start Fourth Section-->
   <section id="fourthSection">
     <div class="OwnContainer">
       <div class="testbk">
@@ -250,6 +196,8 @@
       </div>
     </div>
   </section>
+  <!--End Fourth Section-->
+  <!--Start Footer Section-->
   <footer>
     <div class="OwnContainer">
       <div class="row">
@@ -283,14 +231,18 @@
         </div>
         <div class="col-lg-5">
           <form action="">
-            <label class="form-label" for="UserName">Enter Your Name*</label>
-            <textarea class="form-control " name="UserName" id="" cols="30" rows="1"></textarea>
-            <label  class="form-label" for="Email">Enter Your Email*</label>
-            <textarea class="form-control " name="Email" id="" cols="30" rows="1"></textarea>
+            <label class="form-label" for="UserName">Enter Your Name *</label>
+            <textarea class="form-control UserName" name="UserName" id="" cols="30" rows="1"></textarea>
+            <p class="ValidationMessage" id="UserNameValid"></p>
+            <label  class="form-label" for="Email">Enter Your Email *</label>
+            <textarea class="form-control Email" name="Email" id="" cols="30" rows="1"></textarea>
+            <p class="ValidationMessage" id="EmailValid"></p>
             <label class="form-label" for="Subject">Enter Subject / Committee *</label>
-            <textarea class="form-control " name="Subject" id="" cols="30" rows="1"></textarea>            
+            <textarea class="form-control Subject" name="Subject" id="" cols="30" rows="1"></textarea>            
+            <p class="ValidationMessage" id="SubjectValid"></p>
             <label class="form-label" for="Massage">Massage *</label>
-            <textarea class="form-control " name="Massage" id="" cols="30" rows="3"></textarea>
+            <textarea class="form-control Massage" name="Massage" id="" cols="30" rows="3"></textarea>
+            <p class="ValidationMessage" id="MassageValid"></p>
             <div class="buttonSubmit">
               <button type="submit">submit </button>
             </div>
@@ -304,8 +256,13 @@
       </div>
     </div>
   </footer>
-
+  <!--End Footer Section-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.8.0/dist/sweetalert2.all.min.js"></script>
   <script src="assest/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script src="js/SendEmail.js"></script>
 </body>
 </html>

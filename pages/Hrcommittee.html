@@ -6,11 +6,11 @@
   <!--Import Bootstrap file-->
   <link rel="icon" type="image/x-icon" href="../image/supportAnton.ico">
   <link rel="stylesheet" href="../assest/icons/fontawesome-free-6.4.2-web/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.8.0/dist/sweetalert2.min.css">
   <link rel="stylesheet" href="../assest/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="../style/share.css">
   <link rel="stylesheet" href="../style/committes page.css">
-  <title>Document</title>
+  <title>HR - SUPPORT ASU</title>
 </head>
 <body>
   <!--Start Header Section-->
@@ -171,14 +171,18 @@
         </div>
         <div class="col-lg-5">
           <form action="">
-            <label class="form-label" for="UserName">Enter Your Name*</label>
-            <textarea class="form-control " name="UserName" id="" cols="30" rows="1"></textarea>
-            <label  class="form-label" for="Email">Enter Your Email*</label>
-            <textarea class="form-control " name="Email" id="" cols="30" rows="1"></textarea>
+            <label class="form-label" for="UserName">Enter Your Name *</label>
+            <textarea class="form-control UserName" name="UserName" id="" cols="30" rows="1"></textarea>
+            <p class="ValidationMessage" id="UserNameValid"></p>
+            <label  class="form-label" for="Email">Enter Your Email *</label>
+            <textarea class="form-control Email" name="Email" id="" cols="30" rows="1"></textarea>
+            <p class="ValidationMessage" id="EmailValid"></p>
             <label class="form-label" for="Subject">Enter Subject / Committee *</label>
-            <textarea class="form-control " name="Subject" id="" cols="30" rows="1"></textarea>            
+            <textarea class="form-control Subject" name="Subject" id="" cols="30" rows="1"></textarea>            
+            <p class="ValidationMessage" id="SubjectValid"></p>
             <label class="form-label" for="Massage">Massage *</label>
-            <textarea class="form-control " name="Massage" id="" cols="30" rows="3"></textarea>
+            <textarea class="form-control Massage" name="Massage" id="" cols="30" rows="3"></textarea>
+            <p class="ValidationMessage" id="MassageValid"></p>
             <div class="buttonSubmit">
               <button type="submit">submit </button>
             </div>
@@ -192,8 +196,11 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.8.0/dist/sweetalert2.all.min.js"></script>
 
   <script src="assest/bootstrap/js/bootstrap.min.js"></script>
   <script src="../js/main.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="../js/SendEmail.js"></script>
 </body>
 </html>

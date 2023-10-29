@@ -29,7 +29,7 @@ section .containerContent{
 
 }
 section .containerContent h2{
-  color: #F4B719;
+  color: var(--SecondOrangeColorSupport);
   font-family: Inter;
   font-size: 50px;
   font-style: normal;
@@ -47,7 +47,7 @@ section .containerContent p{
   margin-bottom: 0;
 }
 section .containerContent span{
-  color: #F4B719;
+  color: var(--SecondOrangeColorSupport);
   font-family: Inter;
   font-size: 30px;
   font-style: normal;
@@ -57,7 +57,7 @@ section .containerContent span{
 section .containerContent button{
   margin-top: 15px;
   border-radius: 5px;
-  background: linear-gradient(180deg, #F4B819 0%, rgba(244, 184, 25, 0.50) 100%);
+  background: linear-gradient(180deg, var(--SecondOrangeColorSupport) 0%, rgba(244, 184, 25, 0.50) 100%);
   padding:7px 25px;
   color: #000;
   font-family: Inter;
@@ -94,7 +94,7 @@ section .headSection img{
 }
 section .headSection h2{
   padding-left: 30px;
-  color: #F4B719;
+  color: var(--SecondOrangeColorSupport);
   font-family: Inter;
   font-size: 35px;
   font-style: normal;
@@ -123,7 +123,7 @@ section .bodySection p{
   line-height: normal;
 } 
 section .bodySection p span{
-  color: #F5B819;
+  color: var(--OrangeColorSupport);
   font-family: 'Source Serif Pro';
   font-size: 20px;
   font-style: normal;
@@ -131,7 +131,7 @@ section .bodySection p span{
   line-height: normal;
 }
 section .bodySection p span:nth-child(1){
-  color: #F5B819;
+  color: var(--OrangeColorSupport);
   font-family: Inter;
   font-size: 30px;
   font-style: normal;
@@ -198,7 +198,7 @@ section  .row .cardHave img {
 }
 section .row .cardHave button{
   border-radius: 5px;
-  background: linear-gradient(180deg, #F4B819 0%, rgba(244, 184, 25, 0.50) 100%);
+  background: linear-gradient(180deg, var(--OrangeColorSupport) 0%, rgba(244, 184, 25, 0.50) 100%);
   padding: 10px 20px;
   width: 60%;
   margin-top: 40px;
@@ -229,14 +229,14 @@ section .row .cardHave .mark::after
 }
 
 #fourthSection .headerHightBoard h2{
-  color: #F5B819;
+  color: var(--OrangeColorSupport);
   text-align: center;
-font-family: Inter;
-font-size: 40px;
-font-style: normal;
-font-weight: 900;
-line-height: 40px;
-margin-bottom: 10rem;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+  margin-bottom: 10rem;
 }
 .cardHighBoard{
   width: 100%;
@@ -275,7 +275,7 @@ margin-bottom: 10rem;
   line-height: 40px;
 }
 .HighboardName{
-  background-color: #F4B719;
+  background-color: var(--OrangeColorSupport);
   color: #FFF;
   position: absolute;
   bottom:10px;
@@ -292,7 +292,7 @@ margin-bottom: 10rem;
 .tra{
   height: 0;
   width: 0;
-  border-bottom:20px solid #F4B719;
+  border-bottom:20px solid var(--SecondOrangeColorSupport);
   border-right:20px solid transparent;
   position: absolute;
   bottom: -10px;
@@ -385,5 +385,59 @@ margin-bottom: 10rem;
 @media (max-width:460px){
   section .backgroundImage {
     top:240px;
+  }
+}
+.testbk{
+  width: 100%;
+  top:9rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.2;
+  left:-50px ;
+  overflow: hidden;
+}
+.testbk img{
+  width: 100%;
+  max-width:1200px;
+  min-width: 920px;
+  height: 70%;
+  max-height:1200px;
+  min-height: 920px;
+}
+@media (max-width:1300px) {
+  .testbk{
+    left: 0 !important;
+    top:9rem;
+  }
+  #fourthSection .headerHightBoard{
+    width: 100%;
+  }
+}
+@media (max-width:990px) {
+  .testbk{
+    left: 0px !important;
+    top:9rem;
+  }
+  .backgroundImageHave{
+    height: 109% !important;
+  }
+  #fourthSection .row{
+    flex-direction: column;
+  }
+  #fourthSection .row .col-lg-4{
+    margin-bottom: 20px;
+    
+  }
+  #fourthSection .row .col-lg-4 .cardHighBoard{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width:850px) {
+  .testbk{
+    left: 0px !important;
+    top:8rem;
   }
 }
