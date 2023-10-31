@@ -122,7 +122,14 @@
     font-weight: 800;
   text-decoration: underline;
 }
-
+#committeeContent .contentContainer .bodyContent ul li p{
+  color: #3f3e3e;
+  font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800; 
+  margin: 0;
+}
 #committeeContent .contentContainer .bodyContent.ActiveBodyContent{
   height: fit-content;
 
