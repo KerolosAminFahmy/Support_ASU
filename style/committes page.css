@@ -86,6 +86,49 @@
     line-height: 24px;
     margin: 0;
 }
+#committeeContent .contentContainer .headerContentItem.ActiveheaderContentItem{
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#committeeContent .contentContainer .bodyContent{
+  max-height: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0 20px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color:white;
+}
+#committeeContent .contentContainer .bodyContent ul{
+  padding:20px 0;
+  margin: 0;
+}
+#committeeContent .contentContainer .bodyContent ul li{
+  display: flex;
+  align-items: center;
+}
+#committeeContent .contentContainer .bodyContent ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+#committeeContent .contentContainer .bodyContent ul i{
+  font-size: 30px;
+  margin-right: 20px;
+}
+#committeeContent .contentContainer .bodyContent ul li a{
+  color: #3f3e3e;
+  font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+  text-decoration: underline;
+}
+
+#committeeContent .contentContainer .bodyContent.ActiveBodyContent{
+  height: fit-content;
+
+}
+
+
 /**/
 #BoardCommittee{
   margin-top:80px;
