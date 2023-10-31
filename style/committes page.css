@@ -138,7 +138,7 @@
   width: 94%;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 6rem;
+  padding-right: 0rem;
 }
 @media (max-width:1350px){
   #BoardCommittee .headerBoardCommittee{
@@ -166,6 +166,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 .cardHighBoard img{
   object-fit: cover;
@@ -208,6 +210,7 @@
   font-family: Inter;
   font-size: 19px;
   font-style: normal;
+  text-transform: capitalize;
   font-weight: 900;
   line-height: 40px;
   border-radius: 10px;
