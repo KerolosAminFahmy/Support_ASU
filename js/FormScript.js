@@ -6,19 +6,7 @@ var time=500;
 var userName=false,Email=false,IdField=false,levelField=false,FacultyField=false;
 function setSuccessProgress(index,finalCounter=80){
   AllProgress[index].firstElementChild.classList.add("Done")
-
-  let counter=parseInt(AllProgress[index].firstElementChild.querySelector(".FillLine").style.minHeight)
-  if(isNaN(counter))
-  {
-    counter=0
-  }
-  var time =setInterval(()=>{
-    AllProgress[index].firstElementChild.querySelector(".FillLine").style.minHeight=`${counter}%`;
-    counter+=1
-    if(counter>finalCounter){
-      clearInterval(time)
-    }
-  },10)
+  MoveProgressbar(index,80)
 }
 function MoveProgressbar(index,finalCounter=80){
   let counter=parseInt(AllProgress[index].firstElementChild.querySelector(".FillLine").style.minHeight)
@@ -54,16 +42,34 @@ function moveback(index,startCounter,EndCounter){
   },10)
 }
 function setFailureProgress(index){
-  AllProgress[index].firstElementChild.classList.remove("Done")
-  let counter=parseInt(AllProgress[index].firstElementChild.querySelector(".FillLine").style.minHeight);
-  var time =setInterval(()=>{
-    AllProgress[index].firstElementChild.querySelector(".FillLine").style.minHeight=`${counter}%`;
-    counter-=1
-    if(counter<0){
-      clearInterval(time)
-    }
-  },10)
+  if(AllProgress[index].firstElementChild.classList.contains("Done")){
+    AllProgress[index].firstElementChild.classList.remove("Done")
+    moveback(index,80,0)
+  }
+
   
+}
+function setProgresUserName(i,e){
+  let counterSpace=countSpacesWithoutFirst(e.value);
+  let Startcounter=parseInt(AllProgress[i].firstElementChild.querySelector(".FillLine").style.minHeight)
+  if(isNaN(Startcounter))
+  {
+    Startcounter=0
+  }
+  
+  if(counterSpace<5 && counterSpace>=0)
+  moveback(i,Startcounter,counterSpace*20)
+}
+function setProgresEmail(i,e){
+  let counterSpace=countEnailCorrect(e.value);
+  let Startcounter=parseInt(AllProgress[i].firstElementChild.querySelector(".FillLine").style.minHeight)
+  if(isNaN(Startcounter))
+  {
+    Startcounter=0
+  }
+  
+  if(counterSpace<5 && counterSpace>=0)
+    moveback(i,Startcounter,counterSpace*20)
 }
 AllField.forEach((e,i)=>{
   e.addEventListener("input",()=>{
@@ -72,27 +78,11 @@ AllField.forEach((e,i)=>{
         AllProgress[i].firstElementChild.innerHTML+=CorrectElement;
       }
     if(i==0){
+      setProgresUserName(i,e);
       
-      let counterSpace=countSpacesWithoutFirst(e.value);
-      let Startcounter=parseInt(AllProgress[i].firstElementChild.querySelector(".FillLine").style.minHeight)
-      if(isNaN(Startcounter))
-      {
-        Startcounter=0
-      }
-      
-      if(counterSpace<5 && counterSpace>=0)
-      moveback(i,Startcounter,counterSpace*20)
     }else if(i==1){
       
-      let counterSpace=countEnailCorrect(e.value);
-      let Startcounter=parseInt(AllProgress[i].firstElementChild.querySelector(".FillLine").style.minHeight)
-      if(isNaN(Startcounter))
-      {
-        Startcounter=0
-      }
-      
-      if(counterSpace<5 && counterSpace>=0)
-        moveback(i,Startcounter,counterSpace*20)
+      setProgresEmail(i,e);
     }
   })
 
@@ -103,7 +93,8 @@ AllField.forEach((e,i)=>{
         e.style.borderColor="white";
         userName=true;
       }else{
-        setFailureProgress(i)
+        AllProgress[i].firstElementChild.classList.remove("Done")
+        setProgresUserName(i,e)
         e.style.borderColor="red";
         userName=false;
       }
@@ -113,7 +104,9 @@ AllField.forEach((e,i)=>{
         e.style.borderColor="white";
         Email=true
       }else{
-        setFailureProgress(i)
+        setProgresEmail(i,e);
+        AllProgress[i].firstElementChild.classList.remove("Done")
+
         e.style.borderColor="red";
         Email=false
       }
